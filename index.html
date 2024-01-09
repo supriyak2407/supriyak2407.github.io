@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supriya Konegari</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #0077cc;
+            color: #fff;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        nav {
+            background-color: #333;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        nav a {
+            float: center;
+            display: inline-block;
+            color: #fff;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        section {
+            display: none;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+         h1 {
+           
+            color: #fff; /* Adjust the color for better visibility */
+        }
+
+        h2, h3 {
+            color: #0077cc;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        article {
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #0077cc;
+            color: #fff;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+      .card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 20px;
+        }
+     
+.download-button {
+    background-color: #0077cc;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.download-button:hover {
+    background-color: #005580;
+}
+ .project-card {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .project-info {
+        flex: 1;
+        padding: 20px;
+    }
+
+    .project-image {
+        flex: 1;
+        text-align: center; 
+    }
+
+    .project-image img {
+        max-width: 100%; 
+        max-height: 100%; 
+    }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Supriya Konegari</h1>
+    </header>
+
+    <nav>
+        <a href="javascript:void(0);" onclick="openTab('introduction')">About Me</a>
+        <a href="javascript:void(0);" onclick="openTab('resume')">Resume</a>
+        <a href="javascript:void(0);" onclick="openTab('portfolio')">Projects</a>
+        <a href="javascript:void(0);" onclick="openTab('contact')">Contact Me</a>
+    </nav>
+
+    <section id="introduction">
+        <h2>About Me</h2>
+        <p>As a dedicated graduate student in Data Science, I am driven by a fervent passion for leveraging data to unearth valuable insights and facilitate well-informed decision-making. My expertise spans data cleaning, meticulous data analysis, and the implementation of robust statistical models. Proficient in Python and SQL, I bring a wealth of experience in applying machine learning algorithms to extract meaningful patterns from complex datasets.
+
+My commitment is rooted in the belief that data is a powerful catalyst for transformative decision-making within organizations. I am eager to contribute my skills and insights to assist organizations in making data-driven decisions that propel them toward success.
+
+I invite you to explore my projects and delve into the details of my resume. Each project reflects not only my technical proficiency but also my dedication to solving real-world challenges through innovative data science solutions. I am excited about the opportunity to collaborate and contribute to the dynamic field of data.</p>
+    </section>
+
+    <section id="resume">
+        <h2>Resume</h2>
+        <!-- Resume content goes here -->
+         <button class="download-button" onclick="downloadResume()">Download Resume</button>
+        <div class="card">
+            <h3>Education</h3>
+            <p><strong>Master of Science in Data Science</strong></p>
+            <p>Northeastern University, Boston, USA</p>
+
+            <p><strong>Bachelor of Technology in Electronics and Communications Engineering</strong></p>
+            <p>Jawaharlal Nehru Technological University, Hyderabad, India</p>
+        </div>
+
+        <!-- Work Experience Card -->
+        <div class="card">
+            <h3>Work Experience</h3>
+            <p><strong>Machine Learning & Data Analyst Intern - EISystems Technologies</strong></p>
+            <p>September 2022 - February 2023</p>
+            <ul>
+                <li>Developed a robust foundation in statistical analysis and data preprocessing, encompassing data cleaning, feature engineering, and normalization.</li>
+                <li>Acquired hands-on experience with diverse machine learning algorithms, spanning regression, classification, and clustering.</li>
+                <li>Demonstrated proficiency in implementing algorithms using renowned libraries such as scikit-learn and TensorFlow.</li>
+                <li>Played a pivotal role in the end-to-end data pipeline by collecting, curating, and preparing data for analysis, incorporating thorough data cleaning and normalization techniques.</li>
+                <li>Actively engaged in team discussions and brainstorming sessions, fostering collaboration with fellow interns and mentors.</li>
+            </ul>
+
+        </div>
+
+        <!-- Skills Card -->
+        <div class="card">
+            <h3>Skills</h3>
+            <ul>
+                <li><strong>Programming:</strong> Python, Java, C</li>
+                <li><strong>Machine Learning:</strong> TensorFlow, Scikit-Learn, Keras, pandas, numpy, OpenCV</li>
+                <li><strong>Database:</strong> SQL, MongoDB</li>
+                <li><strong>Tools & Technologies: Excel, Word,PowerPoint, Tableau, Power BI</strong> SQL, MongoDB</li>
+            </ul>
+        </div>
+    </section>
+
+   
+    <section id="portfolio">
+        <h2>Projects</h2>
+        <!-- Portfolio content goes here -->
+         <div class="card project-card">
+        <div class="project-info">
+            <h3>Music Management System</h3>
+            <p>A music management system designed to organize and manage music collections efficiently. The system allows users to catalog their music, create playlists, and perform various management tasks.</p>
+            <a href="https://github.com/supriyak2407/music-management-system" target="_blank">More...</a>
+        </div>
+        <div class="project-image">
+            <img src="C:\Users\91998\Pictures\Screenshots\Screenshot (1176).png" alt="Music Management System Image">
+        </div>
+    </div>
+
+<div class="card project-card">
+        <div class="project-info">
+            <h3>Predicting Popular YouTube Content</h3>
+            <p>An analytics project utilizing machine learning to predict popular YouTube content based on various features. The model aims to identify factors influencing video popularity and viewer engagement.</p>
+            <a href="https://github.com/supriyak2407/YouTube-Trending-Predictor" target="_blank">More...</a>
+        </div>
+        <div class="project-image">
+            <img src="C:\Users\91998\Desktop\ssa.jpg" alt="YouTube Image">
+        </div>
+    </div>
+
+<div class="card project-card">
+        <div class="project-info">
+            <h3>Stock Market Prediction</h3>
+            <p>A data science project focused on predicting stock market trends and prices using historical data and machine learning algorithms. The project aims to assist investors in making informed decisions.</p>
+            <a href="https://github.com/supriyak2407/stock-market-prediction" target="_blank">More...</a>
+        </div>
+        <div class="project-image">
+            <img src="C:\Users\91998\Downloads\IMG_1113.jpg" alt="Stock Market Image">
+        </div>
+    </div>
+
+</section>
+<section id="contact">
+    <h2>Contact Me</h2>
+    <p>
+        Feel free to reach out to me using the following contact details:
+    </p>
+    <div class="card">
+        <h3>Contact Information</h3>
+        <ul>
+            <li><strong>Phone:</strong> +1(857)-891-2569</li>
+            <li><strong>Email:</strong> konegari.su@northeastern.edu</li>
+            <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/supriya-k-34a564253">LinkedIn Profile</a></li>
+            <!-- Add more contact information as needed -->
+        </ul>
+    </div>
+</section>
+
+
+    </section>
+
+
+    <footer>
+        <p>&copy; 2024 Supriya Konegari - Portfolio</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Open the "Introduction" tab by default
+            openTab('introduction');
+        });
+        function openTab(tabName) {
+            var i, sections;
+            sections = document.getElementsByTagName("section");
+            for (i = 0; i < sections.length; i++) {
+                sections[i].style.display = "none";
+            }
+            document.getElementById(tabName).style.display = "block";
+        }
+       function downloadResume() {
+        // Replace 'path/to/your/resume.pdf' with the actual path to your resume file
+        var resumePath = 'C:\\Users\\91998\\Desktop\\SUPRIYA_KONEGARI resume.pdf';
+
+        // Create an anchor element
+        var downloadLink = document.createElement('a');
+
+        // Set the href attribute to the path of your resume file
+        downloadLink.href = resumePath;
+
+        // Set the download attribute with the desired file name
+        downloadLink.download = 'SUPRIYA_KONEGARI resume.pdf';
+
+        // Append the anchor element to the document
+        document.body.appendChild(downloadLink);
+
+        // Trigger a click on the anchor element
+        downloadLink.click();
+
+        // Remove the anchor element from the document
+        document.body.removeChild(downloadLink);
+    }
+
+function openTab(tabName) {
+    var i, sections;
+    sections = document.getElementsByTagName("section");
+    for (i = 0; i < sections.length; i++) {
+        sections[i].style.display = "none";
+    }
+    document.getElementById(tabName).style.display = "block";
+}
+
+    </script>
+
+</body>
+</html>
